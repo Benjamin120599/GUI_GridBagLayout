@@ -77,6 +77,13 @@ public class GUI_GridBagLayout extends JFrame {
 		label4.setFont(new Font("Arial", Font.PLAIN, 10));
 		metodoGeneral(label4, 0, 7, 1, 1, 2);
 		
+		JCheckBox checkBox2 = new JCheckBox("   Interest group field.");
+		checkBox2.setFont(Titulo);
+		checkBox2.setBackground(Color.WHITE);
+		metodoGeneral(checkBox2, 0, 8, 1, 1, 2);
+		
+		
+		
 		pack();
 		
 		
