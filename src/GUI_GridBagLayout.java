@@ -167,6 +167,9 @@ public class GUI_GridBagLayout extends JFrame {
 		label12.setFont(Titulo);
 		metodoPanel1(label12, 0, 3, 1, 1, 2);
 		
+		JTextField textField5 = new JTextField();
+		metodoPanel1(textField5, 0, 4, 1, 1, 2);
+		
 		
 		pack();
 		
