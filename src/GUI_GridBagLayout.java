@@ -160,9 +160,12 @@ public class GUI_GridBagLayout extends JFrame {
 			cajaEmail.setSize(50, 1);
 			metodoPanel1(cajaEmail, 0, 2, 1, 1, 2);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		JLabel label12 = new JLabel("First Name.");
+		label12.setFont(Titulo);
+		metodoPanel1(label12, 0, 3, 1, 1, 2);
 		
 		
 		pack();
