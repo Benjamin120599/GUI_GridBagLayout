@@ -94,6 +94,10 @@ public class GUI_GridBagLayout extends JFrame {
 		JTextField textField2 = new JTextField();
 		metodoGeneral(textField2, 0, 11, 1, 1, 2);
 		
+		JLabel label8 = new JLabel("Enhace your form");
+		label8.setFont(Titulo);
+		metodoGeneral(label8, 0, 12, 1, 1, 2);
+		
 		pack();
 		
 		
