@@ -98,6 +98,11 @@ public class GUI_GridBagLayout extends JFrame {
 		label8.setFont(Titulo);
 		metodoGeneral(label8, 0, 12, 1, 1, 2);
 		
+		JCheckBox checkBox4 = new JCheckBox("<html>   Enable <b>evil</b> popup mode.</html>");
+		checkBox4.setFont(Titulo);
+		checkBox4.setBackground(Color.WHITE);
+		metodoGeneral(checkBox4, 0, 13, 1, 1, 2);
+		
 		pack();
 		
 		
