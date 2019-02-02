@@ -108,6 +108,11 @@ public class GUI_GridBagLayout extends JFrame {
 		checkBox5.setBackground(Color.WHITE);
 		metodoGeneral(checkBox5, 0, 14, 1, 1, 2);
 		
+		JCheckBox checkBox6 = new JCheckBox("<html>   Include archive link.</html>");
+		checkBox6.setFont(Titulo);
+		checkBox6.setBackground(Color.WHITE);
+		metodoGeneral(checkBox6, 0, 15, 1, 1, 2);
+		
 		pack();
 		
 		
