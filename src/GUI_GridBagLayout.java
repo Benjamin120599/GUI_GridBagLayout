@@ -82,7 +82,10 @@ public class GUI_GridBagLayout extends JFrame {
 		checkBox2.setBackground(Color.WHITE);
 		metodoGeneral(checkBox2, 0, 8, 1, 1, 2);
 		
-		
+		JCheckBox checkBox3 = new JCheckBox("   Required Fields Indicators.");
+		checkBox3.setFont(Titulo);
+		checkBox3.setBackground(Color.WHITE);
+		metodoGeneral(checkBox3, 0, 9, 1, 1, 2);
 		
 		pack();
 		
