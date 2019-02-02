@@ -92,7 +92,7 @@ public class GUI_GridBagLayout extends JFrame {
 		bg.add(radioButton2);
 		metodoGeneral(radioButton2, 0, 6, 1, 1, 2);
 		
-		JLabel label4 = new JLabel("<html><body> (Edit required fields in<font color= blue> the form builder </font> ). </body></html>");
+		JLabel label4 = new JLabel("<html><body>                               (Edit required fields in<font color= blue> the form builder </font> ). </body></html>");
 		label4.setFont(new Font("Arial", Font.PLAIN, 10));
 		metodoGeneral(label4, 0, 7, 1, 1, 2);
 		
@@ -137,9 +137,6 @@ public class GUI_GridBagLayout extends JFrame {
 		checkBox7.setBackground(Color.WHITE);
 		metodoGeneral(checkBox7, 0, 16, 1, 1, 2);
 		
-		JLabel lbl0 = new JLabel("");
-		metodoGeneral(lbl0, 1, 0, 1, 1, 0);
-		
 		JLabel label9 = new JLabel("Preview");
 		label9.setFont(new Font("Arial", Font.BOLD, 14));
 		metodoGeneral(label9, 2, 0, 1, 1, 2);
@@ -182,6 +179,10 @@ public class GUI_GridBagLayout extends JFrame {
 		
 		JButton button1 = new JButton(otraImagen);
 		metodoPanel1(button1, 0, 7, 1, 1, 2);
+		
+		JLabel label14 = new JLabel("Copy/paste on to your site");
+		label14.setFont(new Font("Arial", Font.PLAIN, 14));
+		metodoPanel1(label14, 0, 8, 1, 1, 2);
 		
 		pack();
 		
