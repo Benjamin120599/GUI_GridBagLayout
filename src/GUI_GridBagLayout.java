@@ -113,6 +113,11 @@ public class GUI_GridBagLayout extends JFrame {
 		checkBox6.setBackground(Color.WHITE);
 		metodoGeneral(checkBox6, 0, 15, 1, 1, 2);
 		
+		JCheckBox checkBox7 = new JCheckBox("<html><body>   Include <font color= blue> MonkeyRewards </font> link. </body></html>");
+		checkBox7.setFont(Titulo);
+		checkBox7.setBackground(Color.WHITE);
+		metodoGeneral(checkBox7, 0, 16, 1, 1, 2);
+		
 		pack();
 		
 		
