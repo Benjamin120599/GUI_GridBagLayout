@@ -33,7 +33,7 @@ public class GUI_GridBagLayout extends JFrame {
 		getContentPane().setLayout(gbl);
 		setTitle("FORMULARIO");
 		setLocationRelativeTo(null);
-		setBackground(Color.WHITE);
+		getContentPane().setBackground(Color.WHITE);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
 		
@@ -90,6 +90,9 @@ public class GUI_GridBagLayout extends JFrame {
 		JLabel label7 = new JLabel("Set form width.");
 		label7.setFont(Titulo);
 		metodoGeneral(label7, 0, 10, 1, 1, 2);
+		
+		JTextField textField2 = new JTextField();
+		metodoGeneral(textField2, 0, 11, 1, 1, 2);
 		
 		pack();
 		
