@@ -125,6 +125,13 @@ public class GUI_GridBagLayout extends JFrame {
 		label9.setFont(new Font("Arial", Font.BOLD, 14));
 		metodoGeneral(label9, 2, 0, 1, 1, 2);
 		
+		JPanel panel1 = new JPanel();
+		panel1.setLayout(gbl);
+		panel1.setBackground(Color.WHITE);
+		panel1.setBorder(BorderFactory.createTitledBorder(""));
+		metodoGeneral(panel1, 2, 1, 3, 1, 1);
+		
+		
 		pack();
 		
 		
