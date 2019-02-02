@@ -177,6 +177,11 @@ public class GUI_GridBagLayout extends JFrame {
 		JTextField textField6 = new JTextField();
 		metodoPanel1(textField6, 0, 6, 1, 1, 2);
 		
+		ImageIcon imagen = new ImageIcon("./src/imagen.png");
+		ImageIcon otraImagen = new ImageIcon(imagen.getImage().getScaledInstance(160, 50, Image.SCALE_DEFAULT));
+		
+		JButton button1 = new JButton(otraImagen);
+		metodoPanel1(button1, 0, 7, 1, 1, 2);
 		
 		pack();
 		
