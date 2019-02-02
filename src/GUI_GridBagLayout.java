@@ -87,6 +87,10 @@ public class GUI_GridBagLayout extends JFrame {
 		checkBox3.setBackground(Color.WHITE);
 		metodoGeneral(checkBox3, 0, 9, 1, 1, 2);
 		
+		JLabel label7 = new JLabel("Set form width.");
+		label7.setFont(Titulo);
+		metodoGeneral(label7, 0, 10, 1, 1, 2);
+		
 		pack();
 		
 		
