@@ -67,6 +67,12 @@ public class GUI_GridBagLayout extends JFrame {
 		bg.add(radioButton1);
 		metodoGeneral(radioButton1, 0, 5, 1, 1, 2);
 		
+		JRadioButton radioButton2 = new JRadioButton("   All fields.");
+		radioButton2.setFont(Titulo);
+		radioButton2.setBackground(Color.WHITE);
+		bg.add(radioButton2);
+		metodoGeneral(radioButton2, 0, 6, 1, 1, 2);
+		
 		pack();
 		
 		
