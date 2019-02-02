@@ -103,6 +103,11 @@ public class GUI_GridBagLayout extends JFrame {
 		checkBox4.setBackground(Color.WHITE);
 		metodoGeneral(checkBox4, 0, 13, 1, 1, 2);
 		
+		JCheckBox checkBox5 = new JCheckBox("<html>   Disable all <b>JavaScript</b>.</html>");
+		checkBox5.setFont(Titulo);
+		checkBox5.setBackground(Color.WHITE);
+		metodoGeneral(checkBox5, 0, 14, 1, 1, 2);
+		
 		pack();
 		
 		
