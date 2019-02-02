@@ -118,6 +118,13 @@ public class GUI_GridBagLayout extends JFrame {
 		checkBox7.setBackground(Color.WHITE);
 		metodoGeneral(checkBox7, 0, 16, 1, 1, 2);
 		
+		JLabel lbl0 = new JLabel("");
+		metodoGeneral(lbl0, 1, 0, 1, 1, 0);
+		
+		JLabel label9 = new JLabel("Preview");
+		label9.setFont(new Font("Arial", Font.BOLD, 14));
+		metodoGeneral(label9, 2, 0, 1, 1, 2);
+		
 		pack();
 		
 		
