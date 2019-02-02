@@ -1,7 +1,10 @@
 
 import javax.swing.*;
+import javax.swing.text.MaskFormatter;
+
 import java.awt.*;
 import java.nio.channels.GatheringByteChannel;
+import java.text.ParseException;
 
 
 
@@ -12,6 +15,8 @@ public class GUI_GridBagLayout extends JFrame {
 	}
 	
 	GridBagLayout gbl = new GridBagLayout();
+	
+	JPanel panel1 = new JPanel();
 	
 	public void metodoGeneral(JComponent component, int x, int y, int ancho, int alto, int orientacion) {
 		
@@ -24,6 +29,20 @@ public class GUI_GridBagLayout extends JFrame {
 		gbc.fill = orientacion;
 		gbl.setConstraints(component, gbc);
 		add(component);
+		
+	}
+	
+	public void metodoPanel1(JComponent component, int x, int y, int ancho, int alto, int orientacion) {
+		
+		GridBagConstraints gbc = new GridBagConstraints();
+		
+		gbc.gridx = x;
+		gbc.gridy = y;
+		gbc.gridwidth = ancho;
+		gbc.gridheight = alto;
+		gbc.fill = orientacion;
+		gbl.setConstraints(component, gbc);
+		panel1.add(component);
 		
 	}
 	
@@ -125,11 +144,25 @@ public class GUI_GridBagLayout extends JFrame {
 		label9.setFont(new Font("Arial", Font.BOLD, 14));
 		metodoGeneral(label9, 2, 0, 1, 1, 2);
 		
-		JPanel panel1 = new JPanel();
 		panel1.setLayout(gbl);
 		panel1.setBackground(Color.WHITE);
 		panel1.setBorder(BorderFactory.createTitledBorder(""));
 		metodoGeneral(panel1, 2, 1, 3, 1, 1);
+		
+		JLabel label11 = new JLabel("<html><body> Email Adress. <font color = red>*</font></body></html> ");
+		label11.setFont(Titulo);
+		metodoPanel1(label11, 0, 0, 1, 1, 2);
+		
+		try {
+			MaskFormatter mfCC = new MaskFormatter("##################################@gmail.com");
+			mfCC.setPlaceholderCharacter(' ');
+			JFormattedTextField cajaEmail = new JFormattedTextField(mfCC);
+			cajaEmail.setSize(50, 1);
+			metodoPanel1(cajaEmail, 0, 2, 1, 1, 2);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		
 		pack();
