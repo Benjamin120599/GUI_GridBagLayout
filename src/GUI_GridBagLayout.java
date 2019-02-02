@@ -73,6 +73,10 @@ public class GUI_GridBagLayout extends JFrame {
 		bg.add(radioButton2);
 		metodoGeneral(radioButton2, 0, 6, 1, 1, 2);
 		
+		JLabel label4 = new JLabel("<html><body> (Edit required fields in<font color= blue> the form builder </font> ). </body></html>");
+		label4.setFont(new Font("Arial", Font.PLAIN, 10));
+		metodoGeneral(label4, 0, 7, 1, 1, 2);
+		
 		pack();
 		
 		
